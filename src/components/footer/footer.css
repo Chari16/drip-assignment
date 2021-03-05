@@ -1,7 +1,22 @@
 .footer {
-    height: 150px;
-    background: grey;
+    margin-top: 80px;
+    height: 200px;
+    background: rgb(29, 29, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .text-wrap {
     text-align: center;
+}
+
+.text-wrap p {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: #fff;
+}
+
+.text-wrap p strong {
+    font-weight: 700;
 }

@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import './blog.css';
 
 export default function Blog(props) {
-    console.log(" blog props ", props)
-    console.log(" param id ", props.match.params.id)
     const blogId = props.match.params.id
 
     const [blog, setBlog] = useState({});
@@ -24,17 +23,19 @@ export default function Blog(props) {
     },[])
 
     return (
-        <div>
-            <div>
-                {blog.title}
+        <div className="blog-container">
+            <div className="blog-title">
+                <h1>{blog.title}</h1>
             </div>
-            <div>
-                {blog.description}
+            <div className="blog-content">
+                <p>{blog.description}</p>
             </div>
-            <div>
-                {blog.body}
+            <div className="blog-content">
+                <p>{blog.body}</p>
             </div>
-            <img src={blog.url}/>
+            <div className="blog-image">
+                <img src={blog.url} width="100%"/>
+            </div>
         </div>
     )
 }

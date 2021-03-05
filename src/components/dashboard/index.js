@@ -9,7 +9,7 @@ import './dashboard.css';
 const Dashboard = () => {
 
     return (
-        <div className="container">
+        <div>
             <Header/>
             <Switch>
                 <Route exact path="/blogs/:id" exact component={Blog}/>

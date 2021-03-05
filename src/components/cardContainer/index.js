@@ -1,8 +1,8 @@
 import React, { useState, useEffect} from 'react';
 import Card from '../card/Card';
+import './container.css';
 
 export default function CardContainer(props) {
-    console.log(" container props ", props)
 
     const [list, setList] = useState([])
     const [inputField, setInputField] = useState([])
@@ -29,7 +29,7 @@ export default function CardContainer(props) {
     }
 
     return (
-        <div>
+        <div className="container">
             {list.map((item, key) => {
                 return (
                     <Card data={item} key={key} fontSize={fontSize} {...props}/>
