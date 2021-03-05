@@ -1,0 +1,15 @@
+.header {
+    text-align: center
+}
+.logo {
+    display: inline-block;
+    width: 110px;   
+}
+.line-container {
+    margin: 0 30px 0 30px;
+}
+.line-break {
+    padding-left: 50px;
+    border-color: #06112D;
+    opacity: 0.1;
+}
